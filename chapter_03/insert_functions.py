@@ -18,6 +18,20 @@ def insert_data(position, friend):
         
     katok[position] = friend
     
+def delete_data(position):
+    if position < 0 or position > len(katok):
+        print("데이터를 삭제할 범위를 벗어났습니다.")
+        return
+    
+    kLen = len(katok)
+    katok[position] = None
+    
+    for i in range(position+1, kLen):
+        katok[i-1] = katok[i]
+        katok[i] = None
+        
+    del katok[kLen-1]
+    
     
 # 전역 변수 선언 부분
 katok = []
