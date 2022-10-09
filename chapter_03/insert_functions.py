@@ -54,3 +54,16 @@ if __name__ == "__main__":
             data = input("추가할 데이터-->")
             insert_data(pos, data)
             print(katok)
+            
+        elif(select == 3):
+            pos = int(input("삭제할 위치-->"))
+            delete_data(pos)
+            print(katok)
+            
+        elif(select == 4):
+            print(katok)
+            exit
+        
+        else:
+            print("1~4 중 하나를 입력하세요.")
+            continue
