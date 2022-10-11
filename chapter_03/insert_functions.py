@@ -1,4 +1,4 @@
-# ??? ???? ?ï¿½ï¿½?
+## ÇÔ¼ö ¼±¾ð ºÎºÐ ##
 def add_data(friend):
     katok.append(None)
     kLen = len(katok)
@@ -33,16 +33,16 @@ def delete_data(position):
     del katok[kLen-1]
     
     
-# ???? ???? ???? ?ï¿½ï¿½?
+## Àü¿ª º¯¼ö ¼±¾ð ºÎºÐ ##
 katok = []
 select = -1           # 1:???  2:????   3:????   4:????
 
 
-# ???? ??? ?ï¿½ï¿½?
+## ¸ÞÀÎ ÄÚµå ºÎºÐ ##
 if __name__ == "__main__":
     
     while(select != 4):
-        select = int(input("Choose(1:add 2:insert 3:delete 4:quit) -->"))
+        select = int(input("¼±ÅÃÇÏ¼¼¿ä(1:Ãß°¡, 2:»ðÀÔ, 3:»èÁ¦, 4:Á¾·á) -->"))
         
         if(select == 1):
             data = input("data to add-->")
