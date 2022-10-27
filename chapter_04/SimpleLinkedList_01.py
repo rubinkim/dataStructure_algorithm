@@ -1,9 +1,4 @@
 ## 클래스 및 함수선언 부분
-from email import header
-from os import pread
-from platform import node
-
-
 class Node:
     def __init__(self):
         self.data = None
