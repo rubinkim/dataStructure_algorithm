@@ -1,5 +1,4 @@
 # -*- coding: euc-kr -*-
-
 ## 클래스 및 함수선언 부분
 class Node:
     def __init__(self):
