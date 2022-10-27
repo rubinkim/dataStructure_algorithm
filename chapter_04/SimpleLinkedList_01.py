@@ -1,5 +1,5 @@
 # -*- coding: euc-kr -*-
-## 클래스 및 함수선언 부분
+## 클占쏙옙占쏙옙 占쏙옙 占쌉쇽옙占쏙옙占쏙옙 占싸븝옙
 class Node:
     def __init__(self):
         self.data = None
@@ -20,7 +20,7 @@ def printNodes(start):
 def insertNode(findData, insertData):
     global memory, head, current, pread
     
-    # 처음 노드앞에 노드삽입
+    # 처占쏙옙 占쏙옙占쌌울옙 占쏙옙占쏙옙占쏙옙
     if head.data == findData:
         node = Node()
         node.data = insertData
@@ -28,7 +28,7 @@ def insertNode(findData, insertData):
         head = node
         return
     
-    # 중간에 있는 노드앞에 노드삽입
+    # 占쌩곤옙占쏙옙 占쌍댐옙 占쏙옙占쌌울옙 占쏙옙占쏙옙占쏙옙
     current = head
     while current.link != None:
         pre = current
@@ -40,17 +40,17 @@ def insertNode(findData, insertData):
             pre.link = node
             return
         
-    # 마지막노드뒤에 노드삽입
+    # 占쏙옙占쏙옙占쏙옙占쏙옙占쌘울옙 占쏙옙占쏙옙占쏙옙
     node = Node()
     node.data = insertData
     current.link = node
     
-# 변수선언 부분
+# 占쏙옙占쏙옙占쏙옙占쏙옙 占싸븝옙
 memory = []
 head, current, pre = None, None, None
-dataArray = ['다현','정연','쯔위','사나','지효']
+dataArray = ['占쏙옙占쏙옙','占쏙옙占쏙옙','占쏙옙占쏙옙','占썹나','占쏙옙효']
 
-# 메인코드부분
+# 占쏙옙占쏙옙占쌘듸옙觀占�
 if __name__ == "__main__":
     node = Node()
     node.data = dataArray[0]
@@ -66,13 +66,13 @@ if __name__ == "__main__":
         
     printNodes(head)
     
-insertNode('다현', '화사')
+insertNode('占쏙옙占쏙옙', '화占쏙옙')
 printNodes(head)
 
-insertNode('사나', '솔라')
+insertNode('占썹나', '占쌍띰옙')
 printNodes(head)
 
-insertNode('재남', '문별')
+insertNode('占썹남', '占쏙옙占쏙옙')
 printNodes(head)
     
         
