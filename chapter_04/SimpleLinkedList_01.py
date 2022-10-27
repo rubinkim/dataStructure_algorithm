@@ -50,7 +50,35 @@ def insertNode(findData, insertData):
     current.link = node
     
 # 변수선언 부분
+memory = []
+head, current, pre = None, None, None
+dataArray = ['다현','정연','쯔위','사나','지효']
 
+# 메인코드부분
+if __name__ == "__main__":
+    node = Node()
+    node.data = dataArray[0]
+    head = node
+    memory.append(node)
+    
+    for data in dataArray[1:]:
+        pre = node
+        node = Node()
+        node.data = data
+        pre.link = node
+        memory.append(node)
+        
+    printNodes(head)
+    
+insertNode('다현', '화사')
+printNodes(head)
+
+insertNode('사나', '솔라')
+printNodes(head)
+
+insertNode('재남', '문별')
+printNodes(head)
+    
         
         
     
