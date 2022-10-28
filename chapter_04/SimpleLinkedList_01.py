@@ -61,7 +61,21 @@ def deleteNode(deleteData):
         if current.data == deleteData:
             pre.link = current.link
             del current
-            return       
+            return
+        
+# 원하는 데이터 검색
+def findNode(findData):
+    global memory, head, current, pre
+    
+    current = head
+    if current.data == findData:
+        return current
+    
+    while current.link != None:
+        current = current.link
+        if current.data == findData:
+            return current
+    return Node()       
     
 # 변수선언 부분
 memory = []
