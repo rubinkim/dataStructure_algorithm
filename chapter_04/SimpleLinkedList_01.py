@@ -45,6 +45,24 @@ def insertNode(findData, insertData):
     node.data = insertData
     current.link = node
     
+
+def deleteNode(deleteData):
+    global memory, head, current, pre
+    
+    current = head
+    if current.data == deleteData:
+        head = head.link
+        del current
+        return
+        
+    while current.link != None:
+        pre = current
+        current = current.link
+        if current.data == deleteData:
+            pre.link = current.link
+            del current
+            return       
+    
 # 변수선언 부분
 memory = []
 head, current, pre = None, None, None
