@@ -25,3 +25,19 @@ head, current, pre = None, None, None
 dataArray = ['다현', '정연', '쯔위', '사나', '지효']
 
 # 메인 코드 부분
+if __name__ == "__main__":
+    node = Node()
+    node.data = dataArray[0]
+    head = node
+    node.link = head
+    memory.append(node)
+    
+    for data in dataArray[1:]:
+        pre = node
+        node = Node()
+        node.data = data
+        pre.link = node
+        node.link = head
+        memory.append(node)
+        
+    printNodes(head)
