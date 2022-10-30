@@ -6,3 +6,14 @@ class Node:
         self.data = None
         self.link = None
         
+def printNodes(start):
+    current = start
+    
+    if current.link == None:
+        return
+    print(current.data, end=' ')
+    
+    while current.link != start:
+        current = current.link
+        print(current.data, end=' ')
+    print()
